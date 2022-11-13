@@ -1,0 +1,91 @@
+<html>
+  <head><!DOCTYPE html>
+    <html lang="en">
+        <head>
+            
+            <meta charset="utf-8">
+            <title>TWEENSTRAIN</title>
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+            <meta content="TWEENSTRAIN" name="keywords">
+            <meta content="TWEENSTRAIN" name="description">
+            <!-- Favicon -->
+            <link href="img/tween.png" rel="icon">
+    
+            <!-- Google Font -->
+            <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,600;1,700;1,800&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    
+            <!-- JavaScript Libraries -->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/easing/easing.min.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/isotope/isotope.pkgd.min.js"></script>
+            
+            <!-- CSS Libraries -->
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+            <link href="lib/animate/animate.min.css" rel="stylesheet">
+            <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    
+            <!-- Template Stylesheet -->
+            <link href="css/style.css" rel="stylesheet">
+                
+            <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+            <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+            <script src="https://unpkg.com/khuya-player@0.11.1/lib/ReactPlayer.js"></script>
+            <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+            <style>
+                body{
+                background-color: #daa520;
+                }
+                #mydiv{
+                    padding-left: 50px;
+                }
+                
+            </style>
+  </head>
+  <body>
+
+
+
+
+    <div class="wrapper">
+        <!-- Top Bar Start -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="logo">
+                                <h1>TWEENSTRAIN</h1>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->                      
+    <div id="mydiv"></div>
+
+    <script type="text/babel">
+      class Video extends React.Component {
+          render(){
+        return ( <div className='player-wrapper'>
+            <p>"We all make them, the difference is what we do after we make the mistake,<br/> how we see the mistake - a learning experience or a failure."</p>
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/KVpxP3ZZtAc"></iframe><br/>
+            <p>"Each life is made up of mistakes and learning, waiting and growing,<br/> practicing patience and being persistent."</p>
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/KVpxP3ZZtAc"></iframe><br/>
+            <p>""Admitting to a mistake means refusing to use other people as scape-goats<br/> to avoid responsibility but rather courageously owning up to every single one of them.""</p>
+            <iframe width="400" height="200" src="https://www.youtube.com/embed/KVpxP3ZZtAc"></iframe><br/><br/>
+            <a href="./home.html">
+            <button >Go back</button>
+            </a>
+        </div>)
+      
+    }
+}
+
+      ReactDOM.render(<Video/>, document.getElementById('mydiv'))
+    </script>
+
+  </body>
+</html>
